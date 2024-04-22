@@ -4,7 +4,7 @@
 // Switch Case
 // Arrow Function
 // Objects inside an Array
-
+// Currying
 
 
 // Template Strings
@@ -17,6 +17,7 @@ const pet = "Dog";
 
 const Profile = `Hello ako nga pala si ${name} ${gender}, may edad na ${age}.Ito ang email address ko ${email}, at may alaga akong ${pet}.`;
 const Profile2 = `Hi ako nga pala yun kanina si ${name},yung may alagang ${pet}.`;
+const Profile3 = `Hi ako nga pala si ${name}`;
 
 
 //Empty Strings or Default Strings
@@ -58,8 +59,12 @@ function Paulo(move){
                 case "fly":
                     galaw = "lilipad ka na mamaya dyan";
                     break;
+                case "sideways":
+                    galaw = "Bangking ka muna dyan";
+                    break;
                 default:
-                    galaw = "saan ka pupunta dyan?"
+                    galaw = "saan ka pupunta dyan?";
+                    break;
             }
             return galaw;
 }
@@ -68,6 +73,11 @@ function Paulo(move){
 //Arrow Function
 
 const X = (a, b) => a+b;
+
+//Currying
+
+const Z = (S) => (T) => S + T;
+
 
 //Objects inside an Array
 
@@ -100,6 +110,12 @@ function Paulo2(place){
                 break;
             case "Alaminos City":
                 galaw2 = "Dito ako pinanganak sa lungsod na ito";
+                break;
+            case "Manila City":
+                galaw2 = "The capital city of the Philippines";
+                break;
+            case "Quezon City":
+                galaw2 = "Where my condo unit is located";
                 break;
             default:
                 galaw2 = "Saan na lugar ito?";
