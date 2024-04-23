@@ -20,6 +20,7 @@ const Profile2 = `Hi ako nga pala yun kanina si ${name},yung may alagang ${pet}.
 const Profile3 = `Hi ako nga pala si ${name}`;
 
 
+
 //Empty Strings or Default Strings
 
 function Empty(name = '', gender = 'lalake', pet = 'dog'){
@@ -81,12 +82,17 @@ const Z = (S) => (T) => S + T;
 
 //Objects inside an Array
 
-let objArray = [
+let LogIn = [
     {
         username: "John Paulo Paluan",
         password: "123456789",
         email: "JohnDoe@gmail.com"
         
+    },
+    {
+        username1: "RyanWorld2000",
+        password1: "Ryanworld_awesome",
+        email: "Ryanworld@gmail.com"
     }
 
 ];
