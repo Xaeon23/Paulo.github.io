@@ -5,6 +5,7 @@
 // Arrow Function
 // Objects inside an Array
 // Currying
+//Compose
 
 
 // Template Strings
@@ -22,9 +23,10 @@ const Profile3 = `Hi ako nga pala si ${name}`;
 
 
 //Empty Strings or Default Strings
+//Debugging the function Empty();
 
 function Empty(name = '', gender = 'lalake', pet = 'dog'){
-        return `Hi ako nga pala si ${name} ang kasarian ko ay ${gender} may alaga akong ${dog}.`;
+        return `Hi ako nga pala si ${name} ang kasarian ko ay ${gender} may alaga akong ${pet}.`;
 }
 
 
@@ -36,6 +38,8 @@ const Destructure = {
         class02: "Fatima",
         class03: "Santa Anna"
 }
+
+//This is the destructuring for the above code.
 
 const {class01, class02, class03} = Destructure;
 
@@ -72,15 +76,20 @@ function Paulo(move){
 
 
 //Arrow Function
+//Debugging the function x(10, 15);
 
-const X = (a, b) => a+b;
+const x = (a, b) => a+b;
 
 //Currying
+//Single Parameter inside a function
+//When first function call(S), it will return a function (T) => S + T;
+//Debugging the function Z(10)(15);
 
 const Z = (S) => (T) => S + T;
 
 
 //Objects inside an Array
+//Debugging the function LogIn[0].username --- when trying to get the username
 
 let LogIn = [
     {
@@ -92,8 +101,8 @@ let LogIn = [
     {
         username1: "RyanWorld2000",
         password1: "Ryanworld_awesome",
-        email: "Ryanworld@gmail.com"
-    }
+        email1: "Ryanworld@gmail.com"
+    },
 
 ];
 
@@ -129,6 +138,29 @@ function Paulo2(place){
       }
       return galaw2;
 }
+
+//Compose Practice
+
+const compose = (x, y, c) => (z) => x(y(c(z)));
+const add10 = (num) => num + 10;
+const add15 = (num) => num + 15;
+const add20 = (num) => num + 20;
+compose(add10, add15, add20)(2);
+
+//ANSWER 
+
+//47
+
+
+//Compose Practice 2
+
+const compose1 = (a, b, c) => (d) => a(b(c(d)));
+const mult1 = (num) => num * 1;
+const mult2 = (num) => num * 2;
+const mult3 = (num) => num * 3;
+compose1(mult1, mult2, mult3)(2);
+
+//ANSWER IS 12
 
 
 
