@@ -103,6 +103,11 @@ let LogIn = [
         password1: "Ryanworld_awesome",
         email1: "Ryanworld@gmail.com"
     },
+    {
+        username2: "Armando Paluan",
+        password2: "skyflakes",
+        email2: "Armando_Paluan@gmail.com"
+    }
 
 ];
 
