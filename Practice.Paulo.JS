@@ -65,7 +65,10 @@ function Paulo(move){
                     galaw = "lilipad ka na mamaya dyan";
                     break;
                 case "sideways":
-                    galaw = "Bangking ka muna dyan";
+                    galaw = "angeled ka muna dyan";
+                    break;
+                case "dive":
+                    galaw = "submerge ka na";
                     break;
                 default:
                     galaw = "saan ka pupunta dyan?";
@@ -168,12 +171,40 @@ compose1(mult1, mult2, mult3)(2);
 //ANSWER IS 12
 
 
+//Advance Arrays
+
+//Map Array
+
+const arrays = [10, 20, 30, 40];
+
+const sagot = arrays02.map(num => 
+{
+    return num * 2
+});
+
+console.log(sagot);
+
+//ANSWER 20 40 60 80
 
 
+//Filter Array, you ca use condition like <, >, >=, <=, ===
 
+const arrays01 = [10, 20, 30, 40];
 
+const sagot01 = arrays01.filter(num => {
+    return num >= 20
+});
 
+console.log(sagot01);
 
+//ANSWER  30 40
 
+//Reduce Array
 
+const arrays02 = [10, 20, 30, 40];
 
+const sagot02 = arrays02.reduce((accumulator, num) => {return accumulator * num});
+
+console.log(sagot02);
+
+//ANSWER 240000
