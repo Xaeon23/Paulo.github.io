@@ -198,7 +198,6 @@ const sagot01 = arrays01.filter(num => {
 console.log(sagot01);
 
 //ANSWER  30 40
-
 //Reduce Array
 
 const arrays02 = [10, 20, 30, 40];
@@ -208,3 +207,11 @@ const sagot02 = arrays02.reduce((accumulator, num) => {return accumulator * num}
 console.log(sagot02);
 
 //ANSWER 240000
+//Reduce Array with starting number to be multiplied which is 15
+
+const arrays03 = [10, 20, 30, 40];
+const sagot03 = arrays03.reduce((accumulator, num) => {return accumulator * num}, 15);
+console.log(sagot03);
+
+//ANSWER 3600000 -- 15 is the starting number of the accumulator instead of 0 as a default.
+
