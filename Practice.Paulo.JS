@@ -215,3 +215,10 @@ console.log(sagot03);
 
 //ANSWER 3600000 -- 15 is the starting number of the accumulator instead of 0 as a default.
 
+const composeEx = (q, w, e, r) => (r) => q(w(e(r)));
+const add15 = (num) => num + 15;
+const add20 = (num) => num + 20;
+const add25 = (num) => num + 25;
+composeEx(add15, add20, add25)(10);
+
+//ANSWER IS 70
