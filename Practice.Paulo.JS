@@ -222,3 +222,16 @@ const add25 = (num) => num + 25;
 composeEx(add15, add20, add25)(10);
 
 //ANSWER IS 70
+
+const arrayPractice = [
+    {
+        username: "johnpaulopaluan",
+        password: "123456"
+    },
+    {
+        username: "paupau",
+        password: "helloWorld"
+    }
+];
+
+const answer = arrayPractice.map(obj => obj.username);

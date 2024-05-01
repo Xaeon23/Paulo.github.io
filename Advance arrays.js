@@ -45,6 +45,7 @@ const mapArrays = array.map(obj => obj.username + "?");
 
 const filterArrays = array.filter(obj => {return obj.team === "red"});
 
+
 //Find out the total score of all users using reduce
 
 // (1), what is the value of i?
