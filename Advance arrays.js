@@ -43,7 +43,9 @@ const mapArrays = array.map(obj => obj.username + "?");
 
 //Filter the array to only include users who are on team: red
 
-const filterArrays = array.filter(obj => {return obj.team === "red"});
+const filterArrays = array.filter(obj => {return obj.team === "red" });
+console.log(obj);
+
 
 
 //Find out the total score of all users using reduce

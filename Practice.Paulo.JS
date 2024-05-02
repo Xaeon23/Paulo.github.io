@@ -235,3 +235,27 @@ const arrayPractice = [
 ];
 
 const answer = arrayPractice.map(obj => obj.username);
+
+
+
+//practice compose
+
+const composePractice = (a, b, c, d) => (d) => a(b(c(d)));
+const add20 = (num) => num + 20;
+const add30 = (num) => num + 30;
+const add40 = (num) => num + 40;
+composePractice(add20, add30, add40)(10);
+
+//Answer 100
+
+//Destructuring Practice
+
+const skyflakes = {
+
+    username: "johnpaulo",
+    password: "Asus101"
+
+}
+
+const {username, password} = skyflakes;
+
