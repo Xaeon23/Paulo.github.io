@@ -259,3 +259,25 @@ const skyflakes = {
 
 const {username, password} = skyflakes;
 
+function Paulo02(move01)
+{
+    let connect;
+        switch(move01){
+            case "forward":
+                connect = "Go ahead";
+                break;
+            case "back":
+                connect = "Retreat";
+                break;
+            case "left":
+                connect = "Punta ka na sa kaliwa";
+                break;
+            case "right":
+                connect = "Punta ka sa kanan";
+                break;
+            default:
+                connect = "I do not know which way";
+        }
+        return connect;
+};
+
