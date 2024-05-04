@@ -75,7 +75,7 @@ function Paulo(move){
                     break;
             }
             return galaw;
-}
+};
 
 
 //Arrow Function
