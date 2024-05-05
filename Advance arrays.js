@@ -28,7 +28,7 @@ const array = [
 ];
 
 //Create an array using forEach that has all the usernames with a "!" to each of the usernames
-
+//In forEach always use push instead of return
 const AdvanceArrays = []
 const forEachArrays = array.forEach((obj)=> 
   { 
