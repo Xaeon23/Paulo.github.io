@@ -40,6 +40,8 @@ console.log(AdvanceArrays);
 
 //Create an array using map that has all the usernames with a "? to each of the usernames
 
+//Map method never mutated the array. it always return a value
+
 const mapArrays = array.map(obj => obj.username + "?");
 console.log(mapArrays);
 
@@ -54,14 +56,10 @@ console.log(usernameCall);
 //Find out the total score of all users using reduce
 //ANSWER, NOT YET SOLVE
 
-const Score = []
-const reduceArrays = array.reduce((score, acc, obj, num) => 
-  {
-    return Score.push(obj.score + acc + num)
-  });
-  console.log(Score);
 
-
+const scoreArray = array.reduce((obj, score, num, acc) => {
+  return obj.score});
+  console.log(scoreArray);
 
 
 
@@ -82,6 +80,7 @@ const newArray = arrayNum.map((num, i) => {
 
 const arrayNum = [1, 2, 3, 4, 8, 9];
 const newArray = arrayNum.map((num, i) => {return num * 2});
+console.log(newArray);
 
 
 //BONUS: create a new list with all user information, but add "!" to the end of each items they own.
@@ -115,10 +114,7 @@ const arrayBonus = [
 
 ];
 
-const CheckArrays = [];
+//NOT ANSWERED or wrong answer
 
-const BonusArrays = arrayBonus.filter((username, obj, items) => {return obj.items + "!"})
-
-console.log(BonusArrays);
 
 
