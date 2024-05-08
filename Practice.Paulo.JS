@@ -114,6 +114,8 @@ let LogIn = [
 
 ];
 
+//Call the function like this: window.Login[0].username
+
 //Done
 
 function Paulo2(place){
