@@ -300,3 +300,80 @@ const ObjectArrays = [
 
 //Debug like this: window.ObjectArrays[0].location
 //Answer will be Canada
+
+
+function PauloSwitchCase(galaw){
+        let move;
+            switch(galaw){
+                case "forward":
+                    move = "Go ahead, you can do it!";
+                    break;
+                case "back":
+                    move = "Step back a bit";
+                    break;
+                case "right":
+                    move = "Go to the right side or step right";
+                    break;
+                case "left":
+                    move = "Go to the left side or step left";
+                    break;
+                case "fly":
+                    move = "I can go up and up and up from here!";
+                    break;
+                default:
+                    move = "I do not know which way to go";
+                    break;
+
+            }
+            return move;
+};
+
+
+//Advance Objects Exercises
+
+//Evaluate these:
+//#1
+
+[2] === [2] 
+
+//Answer False because they are two distinct array and sits in different memory, and two different instances.
+
+{} === {}
+
+//Answer False because they are two distinct objects and sits in different memory, and two different instances.
+
+//#2 what is the value of property a for each object.
+
+const object1 = { a: 5 }; //4 The Answer is 4 because the last line which is object1.a = 4 will override the value.
+const object2 = object1;  //4 The Answer is 4 because the last line which is object1.a = 4 will override the value.
+const object3 = object2;  //4 The Answer is 4 because the last line which is object1.a = 4 will override the value.
+const object4 = { a: 5 }; //5 The Answer is 5 because it's a normal object and no additional references on this code.
+object1.a = 4;            //4 The Answer is 4 because it tells the object property which is a to have a value of 4.
+
+
+//#3 create two classes: an Animal class and a Mamal class. 
+// create a cow that accepts a name, type and color and has a sound method that moo's her name, type and color. 
+ 
+
+
+
+//Example of Advance objects 
+
+class Player  {
+        constructor(name, type){
+            this.name = name;
+            this.type = type;
+            this.power = brute;
+        };
+        
+        introduce() {
+            console.log(`Hello I'm ${this.name} a strong ${this.type}`);
+        };
+class Beast extends Player {
+        constructor(name, type, power){
+            super(name, type, power);
+        };
+        };
+        
+
+};
