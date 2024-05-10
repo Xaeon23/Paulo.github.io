@@ -255,7 +255,8 @@ composePractice(add20, add30, add40)(10);
 const skyflakes = {
 
     username: "johnpaulo",
-    password: "Asus101"
+    password: "Asus101",
+    email: "johnpaulo@gmail.com"
 
 }
 
@@ -283,3 +284,19 @@ function Paulo02(move01)
         return connect;
 };
 
+//Object inside an Array
+
+const ObjectArrays = [
+    {
+        
+        type: "smartphones",
+        color: "black",
+        brand: "Apple",
+        cost: 1456,
+        location: "Canada",
+
+    }
+];
+
+//Debug like this: window.ObjectArrays[0].location
+//Answer will be Canada
