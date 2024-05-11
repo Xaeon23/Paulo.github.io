@@ -360,20 +360,62 @@ object1.a = 4;            //4 The Answer is 4 because it tells the object proper
 //Example of Advance objects 
 
 class Player  {
-        constructor(name, type){
+        constructor(name, type, power)
+            {
+                this.name = name;
+                this.type = type;
+                this.power = power;
+            }      
+        introduce() 
+            {
+                console.log(`Hello I'm ${this.name} a strong ${this.type}`);
+            }
+    }
+class Beast extends Player 
+        {
+        constructor(name, type, power)
+            {
+                super(name, type, power);
+            }
+        voice()
+            {
+                console.log(`I'm ferocious and unstoppable ${this.type}!`);
+            }
+        };
+    
+
+const Beast1 = new Beast("Xaeon", "Beast", "Brute");
+const Beast2 = new Beast("Paulo", "Beastful", "Brute force");
+const Beast3 = new Beast("Paluan", "Beastiful", "Brutal force");
+
+
+//Example 2 Advance Objects
+class PlayerTest 
+    {
+        constructor(name, type, power)
+        {
             this.name = name;
             this.type = type;
-            this.power = brute;
-        };
-        
-        introduce() {
-            console.log(`Hello I'm ${this.name} a strong ${this.type}`);
-        };
-class Beast extends Player {
-        constructor(name, type, power){
-            super(name, type, power);
-        };
-        };
-        
-
+            this.power = power;
+        }
+    
+Dialogue1()
+        {
+            console.log(`Hello I'm ${this.name} and I'm a unique class called ${this.type}! and I'm carrying ${this.power} to shred my enemies!`);
+        }
 };
+
+class Lahn extends PlayerTest
+    {
+        constructor(name, type, power)
+        {
+            super(name, type, power);
+        }
+    
+
+Dialogue2()
+        {
+            console.log(`I will be the guide to your adventure the whole time! So you will be sick of hearing my name ${this.name} over and over again, hahahah. I will be ypur protector as well since I'm a ${this.type} and I weilding a ${this.power}, the enemies will be no match for us! So don't worry.`);
+        }
+};
+const Lahn1 = new Lahn("Alice", "Lahn", "Crescent Blade");
