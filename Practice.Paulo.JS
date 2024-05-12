@@ -355,6 +355,32 @@ object1.a = 4;            //4 The Answer is 4 because it tells the object proper
 // create a cow that accepts a name, type and color and has a sound method that moo's her name, type and color. 
  
 
+class Animal {
+    constructor(name, type, color)
+    {
+        this.name = name;
+        this.type = type;  
+        this.color = color;
+    }
+
+    sound()
+    {
+        console.log(`Mooooo my name is ${this.name}, and I'm a ${this.type}.
+        My color is ${this.color}`);
+    }
+
+};
+
+class Mamal extends Animal {
+    constructor(name, type, color)
+    {
+        super(name, type, color)
+    }
+};
+
+const animal1 = new Mamal("Shawn", "Cow", "White");
+
+
 
 
 //Example of Advance objects 
@@ -419,3 +445,13 @@ Dialogue2()
         }
 };
 const Lahn1 = new Lahn("Alice", "Lahn", "Crescent Blade");
+
+
+
+//CHAT GPT PROBLEM SOLVED USING ADVANCE OBJECTS
+
+//Ecmascript7 Practice
+//include
+
+const includePractice = ["train", "car", "truck", "tesla", "rivia" ];
+includePractice.includes("ship");
