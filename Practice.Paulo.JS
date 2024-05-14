@@ -446,6 +446,35 @@ Dialogue2()
 };
 const Lahn1 = new Lahn("Alice", "Lahn", "Crescent Blade");
 
+//Example 3 Advance Objects
+
+class Identity
+{
+    constructor(name, surname, email)
+    {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+    }
+    dialogue()
+    {
+        console.log(`Hi I'm ${this.name} ${this.surname}. This is my email address ${this.email}.`)
+    }
+};
+class Identification extends Identity{
+        constructor(name, surname, email)
+        {
+            super(name, surname, email)
+        }
+};
+
+const Me = new Identification("John Paulo", "Paluan", "jppaluan@gmail.com");
+
+
+
+
+
+
 
 
 //CHAT GPT PROBLEM SOLVED USING ADVANCE OBJECTS
