@@ -525,3 +525,110 @@ power100(2) //debugging
 
 const power100 = (x) => x**100;
 power100(10000);
+
+
+//Ecmascript08 example
+const Ecmascript08 = (
+            a,
+            b,
+            c,
+            d,
+            e,
+            ) => {
+                console.log(a)
+            };
+
+    Ecmascript08("P", "A", "U", "L", "O");
+
+//it is easier to add objects this way
+
+//Values Ecma08
+
+const objEcma08 = 
+    {
+    brand:  "Apple",
+    brand1: "Samsung",
+    brand2: "Google",
+    brand3: "Motorola"
+    };
+
+    Object.values(objEcma08).forEach(value => {
+        console.log(value);
+    }
+);
+
+//This convert it into an array Object.values(objEcma08)
+
+//Entries Ecma08
+
+const objEcma08E = 
+    {
+    brand:  "Apple",
+    brand1: "Samsung",
+    brand2: "Google",
+    brand3: "Motorola"
+    };
+
+    Object.entries(objEcma08E).forEach(value => {
+        console.log(value);
+    }
+);
+
+//Keys Ecma08
+
+const objEcma08K = 
+    {
+    brand0:  "Apple",
+    brand1: "Samsung",
+    brand2: "Google",
+    brand3: "Motorola"
+    };
+
+    Object.keys(objEcma08K).forEach((key, index) => {
+        console.log(key, objEcma08K[key]);
+    }
+);
+
+
+//.padStart() example
+
+
+
+//.padEnd() example
+
+
+
+// Solve the below problems:
+
+// #1) Line up the Turtle and the Rabbit at the start line:
+const startLine = '     ||<- Start line';
+console.log(startLine.padStart(20));
+let turtle = '🐢';
+console.log(turtle.padStart(10));
+let rabbit = '🐇';
+console.log(rabbit.padStart(10));
+
+// it should look like this:
+'     ||<- Start line'
+'       🐢'
+'       🐇'
+
+// when you do:
+console.log(startLine);
+console.log(turtle);
+console.log(rabbit);
+
+
+// #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
+// Read about what the second parameter does in padEnd and padStart
+turtle = turtle.trim().padEnd(9, '=');
+
+
+// #3) Get the below object to go from:
+let obj = {
+  my: 'name',
+  is: 'Rudolf',
+  the: 'raindeer'
+}
+// to this:
+'my name is Rudolf the raindeer'
