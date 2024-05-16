@@ -490,19 +490,38 @@ const cube = (b) => b**2;
 // #1) Check if this array includes the name "John".
 const dragons = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];
 
-//answer
-dragons
+
+//Answer
+dragons.includes("John");
 
 // #2) Check if this array includes any name that has "John" inside of it. If it does, return that
 // name or names in an array.
 const dragons = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];
 
+//Answer
+const johnNames = dragons.filter(name => {return name.includes("John") });
+console.log(johnNames);
+
 
 // #3) Create a function that calulates the power of 100 of a number entered as a parameter
 
 const power100 = (x) => x**100;
-power100(2) //debugging 
+power100(2) //debugging
 
 
-// #4) Useing your function from #3, put in the paramter 10000. What is the result?
+// #4) Using your function from #3, put in the paramter 10000. What is the result?
 // Research for yourself why you get this result
+
+//Answer is infinity
+//WHY INFINITY
+//JavaScript Number Limits: 
+//JavaScript represents numbers using a format known 
+//as double-precision floating-point. 
+//The largest number that can be represented in this format 
+//is approximately 1.7976931348623157×10 BY THE POWER 308 --- 10 ** 308
+//When a calculation exceeds this maximum value, 
+//JavaScript returns Infinity to signify that the result 
+//is beyond the representable range.
+
+const power100 = (x) => x**100;
+power100(10000);
