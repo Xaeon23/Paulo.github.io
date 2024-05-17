@@ -623,6 +623,10 @@ console.log(rabbit);
 // Read about what the second parameter does in padEnd and padStart
 turtle = turtle.trim().padEnd(9, '=');
 
+//trim() method removes whitespace from both ends of a string
+//.padEnd method adds 9 characters of total lenght
+
+
 
 // #3) Get the below object to go from:
 let obj = {
@@ -632,3 +636,11 @@ let obj = {
 }
 // to this:
 'my name is Rudolf the raindeer'
+
+Object.entries(obj).forEach(value => {
+    console.log(value)
+});
+        
+
+
+
