@@ -718,15 +718,21 @@ console.log(userEmail3.trim());
 const users = { user1: 18273, user2: 92833, user3: 90315 }
 
 //Answer
-const usersArray = Object.entries(users).map((keys, value)=> {return keys[0] + ' ' + value[1]});
+const usersArray = Object.entries(users);
 console.log(usersArray);
+
 
 //NOTE entries method will convert objects to arrays while fromEntries convert arrays to objects
 
 //#7 change the output array of the above to have the user's IDs multiplied by 2 -- Should output:[ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ]
 
 //Answer
+const usersArray02 = Object.entries(users).map(user => {return user[0] + " " + user[1] * 2});
+console.log(usersArray02);
 
 //#8 change the output array of question #7 back into an object with all the users IDs updated to their new version. Should output: { user1: 36546, user2: 185666, user3: 180630 }
 
 //Answer
+const usersObj = [ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ];
+const usersArray03 = Object.fromEntries(usersObj)
+console.log(usersArray03);
