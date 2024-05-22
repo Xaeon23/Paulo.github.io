@@ -220,12 +220,12 @@ console.log(sagot03);
 //ANSWER 3600000 -- 15 is the starting number of the accumulator instead of 0 as a default.
 
 const composeEx = (q, w, e, r) => (r) => q(w(e(r)));
-const add15 = (num) => num + 15;
-const add20 = (num) => num + 20;
+const add12 = (num) => num + 12;
+const add16 = (num) => num + 16;
 const add25 = (num) => num + 25;
-composeEx(add15, add20, add25)(10);
+composeEx(add12, add16, add25)(10);
 
-//ANSWER IS 70
+//ANSWER IS 63
 
 const arrayPractice = [
     {
@@ -245,12 +245,12 @@ const answer = arrayPractice.map(obj => obj.username);
 //practice compose
 
 const composePractice = (a, b, c, d) => (d) => a(b(c(d)));
-const add20 = (num) => num + 20;
+const add3 = (num) => num + 3;
 const add30 = (num) => num + 30;
 const add40 = (num) => num + 40;
-composePractice(add20, add30, add40)(10);
+composePractice(add3, add30, add40)(10);
 
-//Answer 100
+//Answer 83
 
 //Destructuring Practice
 
@@ -336,11 +336,11 @@ function PauloSwitchCase(galaw){
 //Evaluate these:
 //#1
 
-[2] === [2] 
+// [2] === [2] 
 
 //Answer False because they are two distinct array and sits in different memory, and two different instances.
 
-{} === {}
+// {} === {}
 
 //Answer False because they are two distinct objects and sits in different memory, and two different instances.
 
@@ -498,7 +498,7 @@ dragons.includes("John");
 
 // #2) Check if this array includes any name that has "John" inside of it. If it does, return that
 // name or names in an array.
-const dragons = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];
+const dragons01 = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];
 
 //Answer
 const johnNames = dragons.filter(name => {return name.includes("John") });
@@ -507,8 +507,8 @@ console.log(johnNames);
 
 // #3) Create a function that calulates the power of 100 of a number entered as a parameter
 
-const power100 = (x) => x**100;
-power100(2) //debugging
+const powerof100 = (x) => x**100;
+powerof100(2) //debugging
 
 
 // #4) Using your function from #3, put in the paramter 10000. What is the result?
@@ -599,8 +599,8 @@ console.log(startpad.padStart(20));
 
 //.padEnd() example
 
-const startpad = "PADS";
-console.log(startpad.padEnd(20));
+const startpad02 = "PADS";
+console.log(startpad02.padEnd(20));
 
 
 
@@ -684,7 +684,7 @@ catch{
 // Solve the below questions:
 
 // #1 Turn this array into a new array: [1,2,3,[4],[5]]. Bonus if you can do it on one line
-const array = [[1],[2],[3],[[[4]]],[[[5]]]]
+const array1 = [[1],[2],[3],[[[4]]],[[[5]]]]
 
 //Answer
 array.flat(2);
@@ -736,3 +736,66 @@ console.log(usersArray02);
 const usersObj = [ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ];
 const usersArray03 = Object.fromEntries(usersObj)
 console.log(usersArray03);
+
+
+//ADVANCE LOOPING EXERCISE
+
+
+const basket = ['apples', 'oranges', 'grapes'];
+const detailedBasket = {
+  apples: 5,
+  oranges: 10,
+  grapes: 1000
+}
+
+//1
+for (let i = 0; i < basket.length; i++) {
+  console.log(basket[i]);
+}
+
+//2
+basket.forEach(item => {
+  console.log(item);
+})
+
+for (item in detailedBasket) {
+  console.log(item);
+}
+
+for (item of basket) {
+  console.log(item);
+}
+
+// Question #1:
+// create a function called biggestNumberInArray() that takes
+// an array as a parameter and returns the biggest number.
+// biggestNumberInArray([-1,0,3,100, 99, 2, 99]) should return 100;
+// Use at least 3 different types of javascript loops to write this:
+const array = [-1,0,3,100, 99, 2, 99] // should return 100
+const array2 = ['a', 3, 4, 2] // should return 4
+const array3 = [] // should return 0
+
+function biggestNumberInArray(arr) {
+
+}
+
+function biggestNumberInArray2(arr) {
+
+}
+
+function biggestNumberInArray3(arr) {
+
+}
+
+
+// Question #2:
+// Write a function checkBasket() that lets you know if the item is in the basket or not
+amazonBasket = {
+  glasses: 1,
+  books: 2,
+  floss: 100
+}
+
+function checkBasket(basket, lookingFor) {
+
+}
