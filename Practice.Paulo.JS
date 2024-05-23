@@ -304,31 +304,7 @@ const ObjectArrays = [
 //Answer will be Canada
 
 
-function PauloSwitchCase(galaw){
-        let move;
-            switch(galaw){
-                case "forward":
-                    move = "Go ahead, you can do it!";
-                    break;
-                case "back":
-                    move = "Step back a bit";
-                    break;
-                case "right":
-                    move = "Go to the right side or step right";
-                    break;
-                case "left":
-                    move = "Go to the left side or step left";
-                    break;
-                case "fly":
-                    move = "I can go up and up and up from here!";
-                    break;
-                default:
-                    move = "I do not know which way to go";
-                    break;
 
-            }
-            return move;
-};
 
 
 //Advance Objects Exercises
@@ -775,8 +751,18 @@ const array = [-1,0,3,100, 99, 2, 99] // should return 100
 const array2 = ['a', 3, 4, 2] // should return 4
 const array3 = [] // should return 0
 
-function biggestNumberInArray(arr) {
-
+function biggestNumberInArray(arr) 
+{
+    let num = arr[0];
+    for(let i = 0; i < arr.lenght; i++) //for is use to iterate
+        {
+            if(arr[i] > num)
+                {                       //if is use to compare and update the values
+                arr[i] = num;           //need to store the biggest value every loop
+                }
+                
+        }
+        return num;                     //need to return the new value every loop until condition is meet
 }
 
 function biggestNumberInArray2(arr) {
