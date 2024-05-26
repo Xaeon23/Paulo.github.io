@@ -764,7 +764,7 @@ function biggestNumberInArray(arr)
         }
         return num;                     //need to return the new value every loop until condition is meet
 }
-
+jgjh
 function biggestNumberInArray2(arr) {
 
 }
