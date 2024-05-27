@@ -8,7 +8,6 @@
 // Compose
 //
 
-
 // Template Strings
 
 const name = "John Paulo Paluan";
@@ -764,7 +763,7 @@ function biggestNumberInArray(arr)
         }
         return num;                     //need to return the new value every loop until condition is meet
 }
-jgjh
+
 function biggestNumberInArray2(arr) {
 
 }
@@ -785,3 +784,8 @@ amazonBasket = {
 function checkBasket(basket, lookingFor) {
 
 }
+
+//replaceAll method will replace all instances of string inside the string
+
+const str = "Rich Dad Poor Dad!";
+cconsole.log(str.replaceAll("Dad", "Girl"));
