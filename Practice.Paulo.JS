@@ -746,29 +746,41 @@ for (item of basket) {
 // an array as a parameter and returns the biggest number.
 // biggestNumberInArray([-1,0,3,100, 99, 2, 99]) should return 100;
 // Use at least 3 different types of javascript loops to write this:
-const array = [-1,0,3,100, 99, 2, 99] // should return 100
-const array2 = ['a', 3, 4, 2] // should return 4
-const array3 = [] // should return 0
+ 
 
+
+
+const array = [-1,0,3,100, 99, 2, 99] // should return 100
 function biggestNumberInArray(arr) 
 {
     let num = arr[0];
-    for(let i = 0; i < arr.lenght; i++) //for is use to iterate
+    for(let i = 1; i < arr.length; i++) //for is use to iterate
         {
-            if(arr[i] > num)
-                {                       //if is use to compare and update the values
-                arr[i] = num;           //need to store the biggest value every loop
+            if(arr[i] > num)            //if is use to compare and update the values
+                {                       
+                 num = arr[i] ;           //need to store the biggest value every loop
                 }
                 
         }
         return num;                     //need to return the new value every loop until condition is meet
 }
+console.log(biggestNumberInArray(array)); 
 
-function biggestNumberInArray2(arr) {
+
+const array2 = ['a', 3, 4, 2] // should return 4
+function biggestNumberInArray2(arr) 
+{
+    let num2 = arr[0];
+    for(let i of array2){
+        console.log
+    }
+
 
 }
 
-function biggestNumberInArray3(arr) {
+const array3 = [] // should return 0
+function biggestNumberInArray3(arr) 
+{
 
 }
 
@@ -784,6 +796,64 @@ amazonBasket = {
 function checkBasket(basket, lookingFor) {
 
 }
+
+
+//ES2020
+
+// Exercise 1: what do you think the MIN_SAFE_INTEGER is?
+console.log(Number.MAX_SAFE_INTEGER) // 9007199254740991
+console.log(Number.MIN_SAFE_INTEGER) //-9007199254740991
+
+// Exercise 2: why does this throw an error? How can you fix it?
+              //Because n is not necessary when trying to add safe integers
+3 + 4 + 1n    //Remove n since we are adding numbers within safe integer
+              //We could try to put n also in 3 and 4: OUTPUT is 3n + 4n + 1n = 8n
+
+// Exercise 3: Clean up this code using optional chaining
+let will_pokemon = {
+    pikachu: {
+        species: 'Mouse Pokemon',
+        height: 0.4,
+        weight: 6,
+        power: 'lightning',
+        friend: { 
+            charizard: {
+                species: 'Dragon Pokemon',
+                height: 1.7,
+                weight: 90.5,
+                power: 'fire'
+            }
+        }
+    }
+}
+
+const pokemon = will_pokemon?.pikachu?.species
+console.log(pokemon);
+
+let andrei_pokemon = {
+    raichu: {
+        species: 'Mouse Pokemon',
+        height: 0.8,
+        weight: 30,
+        power: ''
+    }
+}
+
+if (andrei_pokemon && andrei_pokemon.raichu && will_pokemon 
+    && will_pokemon.pikachu && will_pokemon.pikachu.friend 
+    && will_pokemon.pikachu.friend.charizard) {
+        console.log('fight!')
+    } else {
+        console.log('walk away...')
+    }
+
+
+// Exercise 4: What do these each output?
+console.log(false ?? 'hellooo')
+console.log(null ?? 'hellooo')
+console.log(null || 'hellooo')
+console.log((false || null) ?? 'hellooo')
+console.log(null ?? (false || 'hellooo'))
 
 //replaceAll method will replace all instances of string inside the string
 
