@@ -767,22 +767,39 @@ function biggestNumberInArray(arr)
 console.log(biggestNumberInArray(array)); 
 
 
-const array2 = ['a', 3, 4, 2] // should return 4
-function biggestNumberInArray2(arr) 
-{
-    let num2 = arr[0];
-    for(let i of array2){
-        console.log
+const array2 = ['a', 3, 4, 2]; // should return 4
+
+function biggestNumberInArray2(arr) {
+    let num = -Infinity; // Initialize num with the lowest possible value
+    for (let element of arr) {
+        if (typeof element === 'number' && element > num) { // Check if element is a number and greater than current num
+            num = element; // Update num to be the current element
+        }
     }
-
-
+    return num;
 }
+
+console.log(biggestNumberInArray2(array2));
+
 
 const array3 = [] // should return 0
 function biggestNumberInArray3(arr) 
 {
+    if (arr.length === 0) {
+        return 0; // Return 0 if the array is empty
+    }
 
+    let num = -Infinity; // Initialize num with the lowest possible value
+    for (let element of arr) {
+        if (typeof element === 'number' && element > num) { // Check if element is a number and greater than current num
+            num = element; // Update num to be the current element
+        }
+    }
+    return num;
 }
+
+console.log(biggestNumberInArray3(array3));
+
 
 
 // Question #2:
@@ -793,9 +810,16 @@ amazonBasket = {
   floss: 100
 }
 
-function checkBasket(basket, lookingFor) {
+function checkBasket(basket, lookingFor) 
+{
+        if(lookingFor in basket){
+            return `${lookingFor} is in the basket`;
+        }
+            else{
+                return `${lookingFor} is not in teh basket`;
+            }
+        };
 
-}
 
 
 //ES2020
@@ -849,11 +873,13 @@ if (andrei_pokemon && andrei_pokemon.raichu && will_pokemon
 
 
 // Exercise 4: What do these each output?
-console.log(false ?? 'hellooo')
+console.log(false ?? 'hellooo') //
 console.log(null ?? 'hellooo')
 console.log(null || 'hellooo')
 console.log((false || null) ?? 'hellooo')
 console.log(null ?? (false || 'hellooo'))
+
+
 
 //replaceAll method will replace all instances of string inside the string
 
