@@ -873,11 +873,20 @@ if (andrei_pokemon && andrei_pokemon.raichu && will_pokemon
 
 
 // Exercise 4: What do these each output?
-console.log(false ?? 'hellooo') //
-console.log(null ?? 'hellooo')
-console.log(null || 'hellooo')
-console.log((false || null) ?? 'hellooo')
-console.log(null ?? (false || 'hellooo'))
+console.log(false ?? 'hellooo') //false -- The nullish coalescing operator (??) returns the right-hand 
+                                //operand only if the left-hand operand is null or undefined.
+
+console.log(null ?? 'hellooo')  //hellooo -- Here, the left-hand operand is null, which triggers the nullish 
+                                //coalescing operator to return the right-hand operand. Therefore, 'hellooo' is returned.
+
+console.log(null || 'hellooo')  //hellooo -- The logical OR operator (||) returns the right-hand operand if the left-hand 
+                                //operand is falsy (i.e., false, 0, '', null, undefined, or NaN). Since null is a falsy value, the operator returns 'hellooo'.
+
+console.log((false || null) ?? 'hellooo') //hellooo -- The logical OR operator (||) returns the right-hand operand if the left-hand 
+                                          //operand is falsy (i.e., false, 0, '', null, undefined, or NaN). Since false is a falsy value, the operator returns 'hellooo'.
+
+console.log(null ?? (false || 'hellooo')) //hellooo -- The expression inside the parentheses (false || 'hellooo') evaluates first. Since false is falsy, the logical OR operator 
+                                          //returns 'hellooo'. The outer nullish coalescing operator then evaluates null ?? 'hellooo', which returns 'hellooo' since the left-hand operand is null.
 
 
 
