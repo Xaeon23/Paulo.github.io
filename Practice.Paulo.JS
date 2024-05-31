@@ -894,3 +894,6 @@ console.log(null ?? (false || 'hellooo')) //hellooo -- The expression inside the
 
 const str = "Rich Dad Poor Dad!";
 cconsole.log(str.replaceAll("Dad", "Girl"));
+
+const sample = "The millionaire next door!";
+console.log(sample.replace("millionaire", "billionaire"));
