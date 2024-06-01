@@ -893,7 +893,13 @@ console.log(null ?? (false || 'hellooo')) //hellooo -- The expression inside the
 //replaceAll method will replace all instances of string inside the string
 
 const str = "Rich Dad Poor Dad!";
-cconsole.log(str.replaceAll("Dad", "Girl"));
+console.log(str.replaceAll("Dad", "Girl"));
+
+//replace method only replace the first instances
+
+const replaceOnly = "Rich Dad Poor Dad!";
+console.log(replaceOnly.replace("Dad", "Girl"));
 
 const sample = "The millionaire next door!";
 console.log(sample.replace("millionaire", "billionaire"));
+
