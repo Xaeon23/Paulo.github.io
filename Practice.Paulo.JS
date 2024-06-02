@@ -903,3 +903,12 @@ console.log(replaceOnly.replace("Dad", "Girl"));
 const sample = "The millionaire next door!";
 console.log(sample.replace("millionaire", "billionaire"));
 
+
+//compose
+
+const Composed = (a, b, c, d) => (d) => a(b(c(d)));
+const add1 = (num) => num + 1;
+const add2 = (num) => num + 2;
+const add23 = (num) => num + 23;
+Composed(add1, add2, add23)(5);
+
