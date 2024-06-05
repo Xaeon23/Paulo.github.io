@@ -912,6 +912,9 @@ const ztmMonsters = [
     {id: 3, monster: 'Denodude', level: 17},
     {id: 4, monster: 'Pye', level: 5},
     ];
+
+const ztmAnswer = ztmMonsters.findLast(monster => monster.level > 2);
+console.log(ztmAnswer);
     
     // Old Way
     const advancedMonsters = ztmMonsters.filter(item => item.level > 15)
