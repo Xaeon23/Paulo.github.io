@@ -915,6 +915,9 @@ const ztmMonsters = [
 
 const ztmAnswer = ztmMonsters.findLast(monster => monster.level > 2);
 console.log(ztmAnswer);
+
+const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
+    console.log(lastMonster1);
     
     // Old Way
     const advancedMonsters = ztmMonsters.filter(item => item.level > 15)
@@ -925,6 +928,9 @@ console.log(ztmAnswer);
     // Using findLast()
     const lastMonster = ztmMonsters.findLast(item => item.level > 15);
     console.log(lastMonster);
+    
+    
+
     // Using findLastIndex()
     const lastMonsterIndex = ztmMonsters.findLastIndex(item => item.level > 15);
     console.log(lastMonsterIndex);
