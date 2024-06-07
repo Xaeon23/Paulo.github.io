@@ -933,7 +933,10 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
 
     // Using findLastIndex()
     const lastMonsterIndex = ztmMonsters.findLastIndex(item => item.level > 15);
-    console.log(lastMonsterIndex);
+    console.log(lastMonsterIndex);//2
+
+    const lastMonsterIndex1 = ztmMonsters.findLastIndex(item => item.level < 15);
+    console.log(lastMonsterIndex1);//3
     
     
     const ztmMonstersList = ['Mr. Mouse', 'Mac', 'Denodude', 'Pye'];
