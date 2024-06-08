@@ -941,12 +941,12 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
     
     const ztmMonstersList = ['Mr. Mouse', 'Mac', 'Denodude', 'Pye'];
     
-    //Using reverse()
+    //Using reverse() --- does reverse the original arrays aswell
     const reverseMonsters = ztmMonstersList.reverse();
     console.log(ztmMonstersList) 
     console.log(reverseMonsters) 
     
-    //using toReversed()
+    //using toReversed() --- does not reverse the original arrays.
     const reversedMonstersTo = ztmMonstersList.toReversed();
     console.log(ztmMonstersList) 
     console.log(reversedMonstersTo)
