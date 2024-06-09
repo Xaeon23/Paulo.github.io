@@ -951,10 +951,16 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
     console.log(ztmMonstersList) 
     console.log(reversedMonstersTo)
     
-    //Using toSorted()
+    //Using toSorted() --- does Not sort the original array
     const sortedMonstersTo = ztmMonstersList.toSorted();
     console.log(ztmMonstersList) 
     console.log(sortedMonstersTo)
+
+
+    //Using sort() --- does sort the original array
+    const sortedMonstersTo1 = ztmMonstersList.toSorted();
+    console.log(ztmMonstersList) 
+    console.log(sortedMonstersTo1)
     
     //Using toSpliced()
     const spliceMonstersTo = ztmMonstersList.toSpliced(2, 1);
