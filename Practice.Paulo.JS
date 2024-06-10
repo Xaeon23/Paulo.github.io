@@ -962,7 +962,7 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
     console.log(ztmMonstersList) 
     console.log(sortedMonstersTo1)
     
-    //Using toSpliced()
+    //Using toSpliced() --- the first parameter indicates the index and the second parameter indicates how many item inside the array to remove from left to right.
     const spliceMonstersTo = ztmMonstersList.toSpliced(2, 1);
     console.log(ztmMonstersList) 
     console.log(spliceMonstersTo)
