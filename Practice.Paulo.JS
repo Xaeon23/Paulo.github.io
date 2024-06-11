@@ -971,7 +971,8 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
     ztmMonstersList[1] = 'Gost';
     console.log(ztmMonstersList)
     
-    // Using with()
+    // Using with() --- in this example replacing the index 1 with the second parameter which is Gost but doesnt modify the original list inside the array.
+    // The answer will be ['Mr. Mouse', 'Gost', 'Denodude', 'Pye']
     const withMonsters = ztmMonstersList.with(1, 'Gost');
     console.log(ztmMonstersList) 
     console.log(withMonsters)
