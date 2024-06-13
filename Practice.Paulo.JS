@@ -976,3 +976,12 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
     const withMonsters = ztmMonstersList.with(1, 'Gost');
     console.log(ztmMonstersList) 
     console.log(withMonsters)
+
+    //compose recap
+
+    const comp = (a, b, c, d) => (d) => a(b(c(d)));
+    const add2 = num => num + 2;
+    const add4 = num => num + 4;
+    const add6 = num => num + 6;
+    comp(add2, add4, add6)(10);
+    //22
