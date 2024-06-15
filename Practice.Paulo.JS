@@ -44,39 +44,6 @@ const Destructure = {
 const {class01, class02, class03} = Destructure;
 
 
-//Switch Case
-
-function Paulo(move){
-        let galaw;
-            switch(move){
-                case "forward":
-                    galaw = "galaw laka na dyan sa";
-                    break;
-                case "back":
-                    galaw = "atrsa ka mamaya dyan";
-                    break;
-                case "right":
-                    galaw = "punta ka na sa kanan huh?";
-                    break;
-                case "left":
-                    galaw = "punta ka na sa kaliwa";
-                    break;
-                case "fly":
-                    galaw = "lilipad ka na mamaya dyan";
-                    break;
-                case "sideways":
-                    galaw = "angeled ka muna dyan";
-                    break;
-                case "dive":
-                    galaw = "submerge ka na";
-                    break;
-                default:
-                    galaw = "saan ka pupunta dyan?";
-                    break;
-            }
-            return galaw;
-};
-
 
 //Arrow Function
 //Debugging the function x(10, 15);
@@ -118,6 +85,8 @@ let LogIn = [
 
 //Done
 
+
+////Switch Case
 function Paulo2(place){
      let galaw2;
       switch(place){
