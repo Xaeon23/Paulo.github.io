@@ -935,3 +935,17 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
     comp(add2, add4, add6)(10);
     //22
 
+    //Javascript is a single thread language that is non-blocking, v8 is use to communicate js code to browsers, 
+    //it compose of 2 parts, Memory heap and Call Stack
+
+
+    //synchronous, execute the first line before the second line, one at a time.
+
+    //asynchronous, is like a behaviour
+
+    //Recursion --- is a function that calls itself
+
+    function foo()
+    {
+        foo()
+    };
