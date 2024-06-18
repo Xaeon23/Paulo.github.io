@@ -961,3 +961,13 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
     import { add } from './add';
     //or
     import add from './add';
+
+    //call stack
+
+    const one = () => {
+        const two = () => {
+            console.log('5');
+        }
+        two();
+    }
+    
