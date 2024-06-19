@@ -970,4 +970,10 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
         }
         two();
     }
+
+    //1. https://github.com/getify/You-Dont-Know-JS
+
+    //2. http://javascript.info/
+
+    //3. http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/
     
