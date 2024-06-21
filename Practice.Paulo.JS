@@ -987,3 +987,62 @@ const lastMonster1 = ztmMonsters.findLast(item => item.level > 17);
 
 //Question 3: Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
     
+
+function cleanRoom(inputArray) {
+    // Separate numbers and strings
+    const numbers = inputArray.filter(item => typeof item === 'number');
+    const strings = inputArray.filter(item => typeof item === 'string');
+
+    // Helper function to group and sort an array
+    function groupAndSort(arr) {
+        // Sort the array
+        arr.sort((a, b) => a - b);
+
+        const result = [];
+        let currentGroup = [arr[0]];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] === currentGroup[currentGroup.length - 1]) {
+                currentGroup.push(arr[i]);
+            } else {
+                if (currentGroup.length > 1) {
+                    result.push(currentGroup);
+                } else {
+                    result.push(currentGroup[0]);
+                }
+                currentGroup = [arr[i]];
+            }
+        }
+
+        // Add the last group
+        if (currentGroup.length > 1) {
+            result.push(currentGroup);
+        } else {
+            result.push(currentGroup[0]);
+        }
+
+        return result;
+    }
+
+    // Group and sort numbers and strings separately
+    const groupedNumbers = groupAndSort(numbers);
+    const groupedStrings = groupAndSort(strings);
+
+    // Combine the results
+    const finalResult = [];
+    if (groupedNumbers.length > 0) {
+        finalResult.push(groupedNumbers);
+    }
+    if (groupedStrings.length > 0) {
+        finalResult.push(groupedStrings);
+    }
+
+    return finalResult;
+}
+
+// Example usage
+const inputArray1 = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
+const inputArray2 = [1, "2", "3", 2];
+
+console.log(cleanRoom(inputArray1)); 
+console.log(cleanRoom(inputArray2)); 
