@@ -1044,5 +1044,24 @@ function cleanRoom(inputArray) {
 const inputArray1 = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
 const inputArray2 = [1, "2", "3", 2];
 
+
 console.log(cleanRoom(inputArray1)); 
 console.log(cleanRoom(inputArray2)); 
+
+//2
+function findTwoSum(arr, target) {
+    const seenNumbers = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        const currentNumber = arr[i];
+        const neededNumber = target - currentNumber;
+
+        if (seenNumbers[neededNumber] !== undefined) {
+            return [neededNumber, currentNumber];
+        }
+
+        seenNumbers[currentNumber] = i;
+    }
+
+    return null; // If no pair is found that adds up to the target
+}
