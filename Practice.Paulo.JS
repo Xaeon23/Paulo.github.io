@@ -1067,25 +1067,3 @@ function findTwoSum(arr, target) {
 }
 
 
-//mac Terminal
-
-ls
-pwd
-cd 
-cd ..
-clear
-cd / **—> root director**
-cd ~
-cd <folder/folder/folder> ** <> means to add your own folder names that exist on your computer.
-mkdir <folder>
-open <folder> **for windows use: start <folder>
-touch index.html  **for windows use: echo "" > index.html
-open index.html **for windows use: start index.html
-open -a “Sublime Text”  **for windows see the note about this at the bottom of this lecture!!
-open . **for windows use: start .
-mv index.html about.html
-*Try using the Up and Down arrow.
-
-rm <file>
-rm -r <folder>
-say hello **(only on Mac)**
