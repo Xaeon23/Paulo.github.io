@@ -1052,7 +1052,8 @@ console.log(cleanRoom(inputArray2));
 function findTwoSum(arr, target) {
     const seenNumbers = {};
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) 
+        {
         const currentNumber = arr[i];
         const neededNumber = target - currentNumber;
 
@@ -1067,3 +1068,8 @@ function findTwoSum(arr, target) {
 }
 
 
+const name1 = {
+    if(x = y){
+        console.log("Paulo");
+    }
+}
