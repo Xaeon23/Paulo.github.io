@@ -1073,3 +1073,7 @@ const name1 = {
         console.log("Paulo");
     }
 }
+
+//octal
+console.log(018 - 013); //7 -- since 018 is not a valid octal(0-7) and 013(11) is valid then so it will be 18 - 11 = 7
+                        // change it to decimal literals to avoid confusion, it will be 18 - 13 so it will be 5
